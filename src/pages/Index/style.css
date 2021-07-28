@@ -1,0 +1,117 @@
+.index-page_container {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.index-page_call {
+    height: auto;
+}
+
+.index-page_call-first-text {
+    width: 100%;
+    margin-top: 10%;
+    color: #FFFFFF;
+    font-size: 7vw;
+    text-align: center;
+    z-index: 200;
+}
+
+.index-page_call-second-text {
+    background-color: #00FF79;
+    width: 52%;
+    color: #000000;
+    font-size: 7vw;
+    text-align: end;
+    padding-right: 10px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.index-page_call-second-text strong {
+    z-index: 300;
+}
+
+.skateboarding-container {
+    background: #FFFFFF;
+}
+
+.skateboarding-image {
+    z-index: 100;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    margin-top: -5vw;
+    width: 48%;
+    border-bottom-left-radius: 35vw;
+    mix-blend-mode: screen;
+}
+
+.snowboarding-image {
+    left: 0;
+    width: 20%;
+    filter: gray;
+    border-bottom-right-radius: 100px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+}
+
+.climbing-image {
+    width: 40%;
+    height: auto;
+    border-radius: 20px 0px 0px 20px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+}
+
+.index-page_explanation {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.index-page_explanation-text {
+    padding: 0px 10vw;
+    color: #FFFFFF
+}
+
+.index-page_explanation-text p {
+    font-size: 2.4vw;
+}
+
+.index-page_explanation-title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.index-page_redirection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3vw;
+    color: #FFFFFF;
+}
+
+.travelling-image {
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.index-page_container button {
+    margin-top: 20px;
+    font-family: "Montserrat";
+    cursor: pointer;
+    color: #000000;
+}
