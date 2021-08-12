@@ -1,22 +1,89 @@
+.about-page_container {
+    overflow-x:hidden;
+}
+
 .about-page_introduction {
-    background-image: url("../../public/travel-buddies.jpg");
+    background-image: url("../../public/travel-buddies2.jpg");
     width: 100vw;
-    height: 90vh;
-    margin-top: -140px;
+    height: 95vh;
+    margin-top: -100px;
     mix-blend-mode: screen;  
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 70%;
+    opacity: 50%;
 }
 
 .about-page_introduction-title {
-    padding: 47vh 15vw 0 15vw;
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    margin-left: -5%;
+    text-align: center;
+    z-index: 200 !important;
+    opacity: 100% !important;
 }
 
 .about-page_introduction-title h1 {
     color: #FFFFFF;
     font-size: 6.5vw;
+    font-weight: 800;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.strong-green-text.title {
+    margin-left: 40% !important;
+    font-size: 8vw !important;
+}
+
+.app-motivation-section {
+    margin: 20px 0px 20px;
+}
+
+.app-motivation-subtitle {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.app-motivation-desc {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.apps-possibilities {
+    margin: 10px 0px 32vw;
+}
+
+.gym-buddies-photo {
+    background-image: url("../../public/gym-buddies.jpg");
+    width: 55vw;
+    height: 30vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -20px;
+    mix-blend-mode: screen;  
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 50%;
+}
+
+.skate-buddies-photo {
+    background-image: url("../../public/skate-buddies.jpg");
+    width: 55vw;
+    height: 30vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    right: 0px;
+    margin-top: -15px;
+    mix-blend-mode: screen;  
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 50%;
 }

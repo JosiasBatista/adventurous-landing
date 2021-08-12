@@ -1,25 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './style.css';
 
-import Logo from "../../public/Logo.png";
 import Skateboarding from '../../public/Skateboarding.png'
 import Snowboarding from '../../public/Snowboarding.png'
 import Climbing from '../../public/Climbing.png'
 import Travelling from '../../public/Travelling.png';
+import Header from '../../components/Header';
 
 export default function Index() {
     return (
         <div className="index-page_container">
-            <section className="index-page_header">
-                <img className="adventurous-logo" src={Logo} alt="logo" title="logo" />
-                <ul className="navigation-header">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li>Download</li>
-                </ul>
-            </section>
+            <Header />
+
             <section className="index-page_call">
                 <div className="index-page_call-first-text">
                     <strong>Move Fast</strong>

@@ -1,30 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from '../../components/Header'
 
 import './style.css';
-
-import Logo from '../../public/Logo.png';
-import TravelBuddies from '../../public/travel-buddies.jpg';
 
 export default function AboutPage() {
     return (
         <div className="about-page_container">
-            <section className="about-page_header">
-                <img className="adventurous-logo" src={Logo} alt="logo" title="logo" />
-                <ul className="navigation-header white">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/about">Download</Link></li>
-                </ul>
+            <Header />
+
+            <div className="about-page_introduction"></div>
+            <section className="about-page_introduction-title">
+                <h1>ADVENTURES</h1>
+                <h1>NEEDS</h1>
+                <h1 className="strong-green-text title">PARTNERS</h1>
             </section>
 
-            <div className="about-page_introduction">
-                <section className="about-page_introduction-title">
-                    <h1>ADVENTURES</h1>
-                    <h1>NEEDS</h1>
-                    <h1 className="strong-green-text">PARTNERS</h1>
-                </section>
-            </div>
+            <section className="app-motivation-section">
+                <h1 className="app-motivation-subtitle subtitle">And that is why the <span className="strong-green-text subtitle">ADVENTUROUS</span> exists</h1>
+            
+                <p className="app-motivation-desc text">Have you ever been in a situation{"\n"}where you were looking for a partner{"\n"}or a group of people to play a sport?</p>
+            </section>
+
+            <section className="apps-possibilities">
+                <aside className="gym-buddies-photo">
+                </aside>
+
+                <aside className="skate-buddies-photo">
+                </aside>
+            </section>
         </div>
     )
 }

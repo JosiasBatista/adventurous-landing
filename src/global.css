@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
 
 body {
   font-family: 'Montserrat';
@@ -7,15 +7,21 @@ body {
   background: #141414;
 }
 
+h1 {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
 .adventurous-logo {
   position: absolute;
   top: 0px;
   left: 0;
-  max-width: 240px;
-  max-height: 115px;
+  max-width: 200px;
+  max-height: 100px;
   width: 25%;
   height: auto;
   z-index: 200;
+  border-bottom-right-radius: 20px;
 }
 
 .strong-green-text {
@@ -58,4 +64,23 @@ body {
 
 .navigation-header.white li a {
   color: #FFFFFF;
+}
+
+
+@media (max-width: 600px) {
+  .navigation-header li {
+    font-size: 12px !important;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .subtitle {
+    font-size: 12px !important;
+  }
+
+  .text {
+    font-size: 10px !important;
+  }
 }
