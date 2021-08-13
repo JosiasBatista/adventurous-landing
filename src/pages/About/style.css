@@ -1,5 +1,7 @@
 .about-page_container {
     overflow-x:hidden;
+    position: relative;
+    width: auto;
 }
 
 .about-page_introduction {
@@ -55,7 +57,8 @@
 }
 
 .apps-possibilities {
-    margin: 10px 0px 32vw;
+    margin: 50px 0px 20vw;
+    overflow-y: hidden;
 }
 
 .gym-buddies-photo {
@@ -70,6 +73,15 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.gym-buddies-photo span {
+    padding-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 22px;
 }
 
 .skate-buddies-photo {
@@ -80,10 +92,68 @@
     border-bottom-left-radius: 20px;
     position: absolute;
     right: 0px;
-    margin-top: -15px;
+    margin-top: -15vw;
     mix-blend-mode: screen;  
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-wrap;
+}
+
+.skate-buddies-photo span {
+    font-size: 22px;
+    text-align: center;
+}
+
+.app-existence-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.app-existence-desc p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.app-existence-desc-box {
+    width: 90%;
+    height: 100px;
+    background: #222222;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-existence-desc-box p {
+    color: #FFFFFF;
+    white-space: pre-wrap;
+    width: 90%;
+}
+
+.app-existence-desc-box button.right {
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    right: 5vw;
+}
+
+.app-existence-desc-box button.left {
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    left: 5vw;
+}
+
+.app-existence-desc-box button img {
+    color: #00FF79;
 }
