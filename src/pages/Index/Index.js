@@ -12,7 +12,7 @@ export default function Index() {
     return (
         <div className="index-page_container">
             <Header />
-
+ 
             <section className="index-page_call">
                 <div className="index-page_call-first-text">
                     <strong>Move Fast</strong>
