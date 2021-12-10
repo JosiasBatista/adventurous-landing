@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from '../../components/Header'
 
 import './style.css';
-import ChevronRight from '../../public/chevron-right.svg';
-import ChevronLeft from '../../public/chevron-left.svg';
+import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
+import Community from '../../public/fei-chao-zUbSHj23Wws-unsplash.jpg';
+import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
 
 export default function AboutPage() {
     const [actualNumberMessage, setActualNumberMessag] = useState(0)
@@ -52,21 +55,37 @@ export default function AboutPage() {
                 </p>
 
                 <div className="app-existence-desc-box" >
-                    <p className="text">{getActualMessage()}</p>
+                    <Carousel
+                        emulateTouch={true}
+                        swipeable ={true}
+                        autoPlay={true}
+                        interval={4000}
+                        showArrows={false}   
+                        showThumbs={false} 
+                        showStatus={false}
+                        className="app-existence-carousel"
+                        transitionTime={500}
+                        stopOnHover={false}
+                    >
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label">Encontre pessoas com os mesmos interesses!</span>
+                            <img src={Friends} alt="Friends" title="Friends" />
+                        </div>
 
-                    {actualNumberMessage < messages.length - 1 ?
-                        <button onClick={() => setActualNumberMessag(actualNumberMessage + 1)} className="invisible-button right">
-                            <img src={ChevronRight} alt="right"/>
-                        </button>
-                        :
-                        <button onClick={() => setActualNumberMessag(actualNumberMessage - 1)} className="invisible-button left">
-                            <img src={ChevronLeft} alt="left"/>
-                        </button>
-                    }
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label">Faça parte de comunidades do que você ama!</span>
+                            <img src={Community} alt="Community" title="Community" />
+                        </div>
+                        
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label">Ganhe insígnias que mostrem quem você é!</span>
+                            <img src={Badge} alt="Badge" title="Badge" />
+                        </div>
+                    </Carousel>
                 </div>
             </section>
 
-            <button className="download-button">Join US</button>
+            <button className="download-button">Soon</button>
         </div>
     )
 }

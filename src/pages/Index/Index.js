@@ -35,7 +35,7 @@ export default function Index() {
             </section>
             <section className="index-page_redirection">
                 <strong>Because why join an<br/>adventure alone when you<br/>can be part of a <strong className="strong-green-text">TEAM</strong></strong>
-                <button className="adventurous-button">DOWNLOAD</button>
+                <button className="adventurous-button">Soon</button>
                 <img className="travelling-image" src={Travelling} alt="travelling" title="travelling" />
             </section>
         </div>
