@@ -60,22 +60,22 @@ export default function AboutPage() {
                         stopOnHover={false}
                     >
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label">Encontre pessoas com os mesmos interesses!</span>
+                            <span className="app-existence-carousel-label text">Encontre pessoas com os mesmos interesses!</span>
                             <img src={Friends} alt="Friends" title="Friends" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label">Faça parte de comunidades do que você ama!</span>
+                            <span className="app-existence-carousel-label text">Faça parte de comunidades do que você ama!</span>
                             <img src={Community} alt="Community" title="Community" />
                         </div>
                         
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label">Ganhe insígnias que mostrem quem você é!</span>
+                            <span className="app-existence-carousel-label text">Ganhe insígnias que mostrem quem você é!</span>
                             <img src={Badge} alt="Badge" title="Badge" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label">Encare desafios e se supere!</span>
+                            <span className="app-existence-carousel-label text">Encare desafios e se supere!</span>
                             <img src={Challenge} alt="Challenge" title="Challenge" />
                         </div>
                     </Carousel>
