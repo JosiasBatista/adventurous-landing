@@ -13,7 +13,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 .about-page_introduction-title {
@@ -72,7 +72,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -85,7 +85,7 @@
 }
 
 .skate-buddies-photo {
-    /* background-image: url("../../public/skate-buddies.jpg"); */
+    background-image: url("../../public/skate-buddies.jpg");
     width: 55vw;
     height: 30vw;
     border-top-left-radius: 20px;
@@ -97,7 +97,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;

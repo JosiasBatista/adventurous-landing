@@ -8,7 +8,6 @@ import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
 import Community from '../../public/fei-chao-zUbSHj23Wws-unsplash.jpg';
 import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
 import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
-import HeaderImage from '../../public/skate-buddies.jpg';
 
 export default function AboutPage() {
     return (
@@ -18,7 +17,7 @@ export default function AboutPage() {
             <div className="about-page_introduction">
             </div>
 
-            <section className="about-page_introduction-title" style={{ backgroundImage: `url(${HeaderImage})` }}>
+            <section className="about-page_introduction-title">
                 <h1>AVENTURAS</h1>
                 <h1>EXIGEM</h1>
                 <h1 className="strong-green-text title">PARCEIROS</h1>
