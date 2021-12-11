@@ -13,7 +13,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 .about-page_introduction-title {
@@ -23,7 +23,7 @@
     margin-left: -5%;
     text-align: center;
     z-index: 200 !important;
-    opacity: 100% !important;
+    opacity: 1 !important;
 }
 
 .about-page_introduction-title h1 {
@@ -72,7 +72,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -97,7 +97,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    opacity: 50%;
+    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,6 +140,7 @@
 .app-existence-desc-box strong {
     color: #FFFFFF;
     font-size: 2.9vw;
+    margin-bottom: 10px;
 }
 
 .app-existence-carousel {
@@ -158,18 +159,19 @@
 
 .app-existence-carousel-label {
     color: #00FF79;
-    font-size: 2.5vw;
+    font-size: 18px;
     padding-bottom: 20px;
 }
 
 .app-existence-carousel-images {
-    width: 70%;
+    width: 80%;
     height: 35vw;
 }
 
 .app-existence-carousel-images img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
 }
 
