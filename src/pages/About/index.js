@@ -10,16 +10,6 @@ import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
 import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
 
 export default function AboutPage() {
-    const [actualNumberMessage, setActualNumberMessag] = useState(0)
-    const [messages, ] = useState([
-        "Find people with the same \n interestes",
-        "Join communities of what \n you love"            
-    ])
-
-    function getActualMessage() {
-        return messages[actualNumberMessage]
-    }
-
     return (
         <div className="about-page_container">
             <Header />
