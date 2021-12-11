@@ -126,34 +126,20 @@
 .app-existence-desc-box {
     width: 90%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 20px;
     background: #222222;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.app-existence-desc-box p {
+.app-existence-desc-box strong {
     color: #FFFFFF;
-    white-space: pre-wrap;
-    width: 90%;
-}
-
-.app-existence-desc-box button.right {
-    background: transparent;
-    border: transparent;
-    position: absolute;
-    right: 5vw;
-}
-
-.app-existence-desc-box button.left {
-    background: transparent;
-    border: transparent;
-    position: absolute;
-    left: 5vw;
+    font-size: 2.9vw;
 }
 
 .app-existence-carousel {

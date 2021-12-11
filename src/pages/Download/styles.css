@@ -1,0 +1,31 @@
+.download-page_container {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    margin-top: 5vh;
+}
+
+.download-page_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-page_content img {
+    width: 50vw;
+    height: 50vw;
+}
+
+.download-page_content strong {
+    margin-top: -8%;
+    color: #FFFFFF;
+    font-size: 3vw;
+}
+
+.download-page_content strong.text_description_spotlight {
+    color: #00FF79;
+    padding-bottom: 40px;
+}

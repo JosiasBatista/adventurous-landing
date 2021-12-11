@@ -7,6 +7,7 @@ import './style.css';
 import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
 import Community from '../../public/fei-chao-zUbSHj23Wws-unsplash.jpg';
 import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
+import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
 
 export default function AboutPage() {
     const [actualNumberMessage, setActualNumberMessag] = useState(0)
@@ -27,34 +28,35 @@ export default function AboutPage() {
             </div>
 
             <section className="about-page_introduction-title">
-                <h1>ADVENTURES</h1>
-                <h1>NEEDS</h1>
-                <h1 className="strong-green-text title">PARTNERS</h1>
+                <h1>AVENTURAS</h1>
+                <h1>EXIGEM</h1>
+                <h1 className="strong-green-text title">PARCEIROS</h1>
             </section>
 
             <section className="app-motivation-section">
-                <h1 className="app-motivation-subtitle subtitle">And that is why the <span className="strong-green-text subtitle">ADVENTUROUS</span> exists</h1>
+                <h1 className="app-motivation-subtitle subtitle">E por isso que o <span className="strong-green-text subtitle">ADVENTUROUS</span> existe!</h1>
             
-                <p className="app-motivation-desc text">Have you ever been in a situation{"\n"}where you were looking for a partner{"\n"}or a group of people to play a sport?</p>
+                <p className="app-motivation-desc text">Você já esteve em uma situação {"\n"}onde você buscava um parceiro {"\n"}ou um grupo para praticar um esporte?</p>
             </section>
 
             <section className="apps-possibilities" scroll="no">
                 <aside className="gym-buddies-photo">
-                    <span className="text">Maybe a gym partner</span>
+                    <span className="text">Um parceiro de academia</span>
                 </aside>
 
                 <aside className="skate-buddies-photo">
-                    <span className="text">Or people to teach you how{"\n"}to skateboard...</span>
+                    <span className="text">Ou alguém para te ensinar a{"\n"}andar de skate...</span>
                 </aside>
             </section>
 
             <section className="app-existence-desc">
-                <p className="subtitle">It doesn’t matter... Life is better when{"\n"}
-                SHARED and we exist to help you{"\n"}
-                SHARE and <span className="strong-green-text">LIVE</span> in community
+                <p className="subtitle">Não importa o motivo... A vida é melhor quando{"\n"}
+                COMPARTILHAMOS e nós existimos para te ajudar a{"\n"}
+                COMPARTILHAR e <span className="strong-green-text">VIVER</span> em comunidade!
                 </p>
 
                 <div className="app-existence-desc-box" >
+                    <strong>E ai, vai perder?</strong>
                     <Carousel
                         emulateTouch={true}
                         swipeable ={true}
@@ -81,11 +83,16 @@ export default function AboutPage() {
                             <span className="app-existence-carousel-label">Ganhe insígnias que mostrem quem você é!</span>
                             <img src={Badge} alt="Badge" title="Badge" />
                         </div>
+
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label">Encare desafios e se supere!</span>
+                            <img src={Challenge} alt="Challenge" title="Challenge" />
+                        </div>
                     </Carousel>
                 </div>
             </section>
 
-            <button className="download-button">Soon</button>
+            <button className="download-button">Em breve</button>
         </div>
     )
 }

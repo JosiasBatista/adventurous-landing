@@ -10,7 +10,7 @@ export default function Header() {
             <ul className="navigation-header white">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/about">Download</Link></li>
+                <li><Link to="/download">Download</Link></li>
             </ul>
         </section>
     )

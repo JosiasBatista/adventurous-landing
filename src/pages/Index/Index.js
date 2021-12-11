@@ -27,15 +27,16 @@ export default function Index() {
             </section>
             <section className="index-page_explanation">
                 <div className="index-page_explanation-text">
-                    <strong className="index-page_explanation-title">Are you an<br/><strong className="strong-green-text">Adventurous?</strong></strong>
-                    <p>Join our community an find<br/>others people like you. Share<br/>your videos, publish your<br/>eXtreme photos and make<br/>visible all of your<br/><span className="strong-red-text">adventures!</span></p>
-                    <p>You can do this and much more in our application</p>
+                    <strong className="index-page_explanation-title">Você é um<br/><strong className="strong-green-text">Adventurous?</strong></strong>
+                    <p>Faça parte da nossa comunidade, encontre<br/>outras pessoas como você. Compartilhe<br/>suas fotos, publique suas<br/>conquistas e torne<br/>
+                    visíveis as suas<br/><span className="strong-red-text">aventuras!</span></p>
+                    <p>Você pode fazer isso e muito mais conosco!</p>
                 </div>
                 <img className="climbing-image" src={Climbing} alt="climbing" title="climbing" />
             </section>
             <section className="index-page_redirection">
-                <strong>Because why join an<br/>adventure alone when you<br/>can be part of a <strong className="strong-green-text">TEAM</strong></strong>
-                <button className="adventurous-button">Soon</button>
+                <strong>Por qual motivo sair em uma<br/>aventura sozinho quando<br/>você pode ser parte de um <strong className="strong-green-text">TIME</strong></strong>
+                <button className="adventurous-button">Em breve</button>
                 <img className="travelling-image" src={Travelling} alt="travelling" title="travelling" />
             </section>
         </div>
