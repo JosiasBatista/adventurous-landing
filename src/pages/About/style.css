@@ -85,7 +85,7 @@
 }
 
 .skate-buddies-photo {
-    background-image: url("../../public/skate-buddies.jpg");
+    /* background-image: url("../../public/skate-buddies.jpg"); */
     width: 55vw;
     height: 30vw;
     border-top-left-radius: 20px;
