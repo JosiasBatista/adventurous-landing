@@ -23,7 +23,7 @@
     margin-left: -5%;
     text-align: center;
     z-index: 200 !important;
-    opacity: 100% !important;
+    opacity: 1 !important;
 }
 
 .about-page_introduction-title h1 {
