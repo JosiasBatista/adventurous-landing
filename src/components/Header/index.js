@@ -8,9 +8,9 @@ export default function Header() {
         <section className="about-page_header">
             <img className="adventurous-logo" src={Logo} alt="logo" title="logo" />
             <ul className="navigation-header white">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/download">Download</Link></li>
+                <li><Link className="subtitle" to="/">Home</Link></li>
+                <li><Link className="subtitle" to="/about">About</Link></li>
+                <li><Link className="subtitle" to="/download">Download</Link></li>
             </ul>
         </section>
     )

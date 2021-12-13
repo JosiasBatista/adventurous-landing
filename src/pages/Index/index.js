@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 
 import './style.css';
 
@@ -9,6 +10,12 @@ import Travelling from '../../public/Travelling.png';
 import Header from '../../components/Header';
 
 export default function Index() {
+    const [redirectToDownload, setRedirectToDownload] = useState(false);
+
+    function goToDownload() {
+        setRedirectToDownload(true);
+    }
+
     return (
         <div className="index-page_container">
             <Header />
@@ -36,9 +43,13 @@ export default function Index() {
             </section>
             <section className="index-page_redirection">
                 <strong>Por qual motivo sair em uma<br/>aventura sozinho quando<br/>você pode ser parte de um <strong className="strong-green-text">TIME</strong></strong>
-                <button className="adventurous-button">Em breve</button>
+                <button className="adventurous-button" onClick={() => goToDownload()}>Em breve</button>
                 <img className="travelling-image" src={Travelling} alt="travelling" title="travelling" />
             </section>
+
+            {redirectToDownload &&
+                <Redirect to="/download" />
+            }
         </div>
     )
 }
