@@ -8,10 +8,112 @@
 .download-page_content {
     width: 100%;
     height: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download-page_infos {
+    width: 20%;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+}
+
+
+.download-page_infos strong {
+    display: inline-block;
+}
+
+.download-page_infos-texts strong {
+    margin-bottom: 10px;
+}
+
+.download-page_infos-texts strong + strong {
+    margin-bottom: 20px;
+}
+
+.app-presentation {
+    color: #00FF79;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.app-presentation img {
+    width: 20vw !important;
+    height: 20vw !important;
+}
+
+.download-page_image-montage {
+    width: 50vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.download-page_image-montage img {
+    border-radius: 10px;
+}
+
+.download-page_image-montage #lake {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-page_image-montage #mountain {
+    /* grid-area: mountain; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-page_image-montage #surf {
+    /* grid-area: surf; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-page_image-montage #sentence {
+    /* grid-area: sentence; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-page_image-montage #cycle {
+    /* grid-area: cycle; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .download-page_content img {
@@ -19,13 +121,21 @@
     height: 50vw;
 }
 
-.download-page_content strong {
-    margin-top: -8%;
-    color: #FFFFFF;
-    font-size: 3vw;
-}
-
 .download-page_content strong.text_description_spotlight {
     color: #00FF79;
     padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .download-page_content {
+        flex-direction: column;
+    }
+
+    .download-page_content .download-page_infos {
+        width: 50%;
+    }
+
+    .download-page_content .download-page_image-montage {
+        width: 75vw;
+    }
 }

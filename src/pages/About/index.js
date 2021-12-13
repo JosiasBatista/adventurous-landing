@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from '../../components/Header'
+import { Redirect } from 'react-router-dom';
 
 import './style.css';
 import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
@@ -10,6 +11,12 @@ import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
 import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
 
 export default function AboutPage() {
+    const [redirectToDownload, setRedirectToDownload] = useState(false);
+
+    function goToDownload() {
+        setRedirectToDownload(true);
+    }
+
     return (
         <div className="about-page_container">
             <Header />
@@ -82,7 +89,11 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <button className="download-button">Em breve</button>
+            <button className="download-button" onClick={() => goToDownload()}>Em breve</button>
+
+            {redirectToDownload &&
+                <Redirect to="/download" />
+            }
         </div>
     )
 }

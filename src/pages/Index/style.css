@@ -100,7 +100,8 @@
 
 .travelling-image {
     width: 95%;
-    height: auto;
+    height: 50vw;
+    object-fit: cover;
     margin-top: 20px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
