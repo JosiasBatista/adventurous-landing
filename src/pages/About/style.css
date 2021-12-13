@@ -168,11 +168,23 @@
     height: 35vw;
 }
 
+.app-existence-carousel-images.cliff-jump-image {
+    padding-top: 150px;
+}
+
 .app-existence-carousel-images img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
+}
+
+.app-existence-carousel-images img.cliff-jump-image {
+    object-position: center 22%;
+}
+
+.app-existence-carousel-images img.steps-image {
+    object-position: center 70%;
 }
 
 .app-existence-desc-box button img {

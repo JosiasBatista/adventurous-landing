@@ -92,6 +92,7 @@ h1 {
 @media (max-width: 600px) {
   .navigation-header li {
     font-size: 12px !important;
+    margin-left: 10px;
   }
 
   .title {
