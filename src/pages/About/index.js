@@ -9,6 +9,8 @@ import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
 import Community from '../../public/fei-chao-zUbSHj23Wws-unsplash.jpg';
 import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
 import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
+import CliffJump from '../../public/pexels-dmitriy-ganin-7790598.jpg';
+import Steps from '../../public/pexels-ben-mack-5326900.jpg';
 
 export default function AboutPage() {
     const [redirectToDownload, setRedirectToDownload] = useState(false);
@@ -65,6 +67,7 @@ export default function AboutPage() {
                         className="app-existence-carousel"
                         transitionTime={500}
                         stopOnHover={false}
+                        infiniteLoop={true}
                     >
                         <div className="app-existence-carousel-images">
                             <span className="app-existence-carousel-label text">Encontre pessoas com os mesmos interesses!</span>
@@ -84,6 +87,16 @@ export default function AboutPage() {
                         <div className="app-existence-carousel-images">
                             <span className="app-existence-carousel-label text">Encare desafios e se supere!</span>
                             <img src={Challenge} alt="Challenge" title="Challenge" />
+                        </div>
+
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label text">Encontre a aventura da próxima viagem!</span>
+                            <img className="cliff-jump-image" src={CliffJump} alt="CliffJump" title="CliffJump" />
+                        </div>
+
+                        <div className="app-existence-carousel-images">
+                            <span className="app-existence-carousel-label text">Escreva o seu legado!</span>
+                            <img className="steps-image" src={Steps} alt="Steps" title="Steps" />
                         </div>
                     </Carousel>
                 </div>

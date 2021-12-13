@@ -56,6 +56,7 @@
     grid-template-rows: repeat(5, auto);
     row-gap: 10px;
     column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .download-page_image-montage img {
@@ -124,6 +125,52 @@
 .download-page_content strong.text_description_spotlight {
     color: #00FF79;
     padding-bottom: 40px;
+}
+
+.modal_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.app_pass_modal {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: #222222;
+    border-radius: 20px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.app_pass_modal_title {
+    color: #00FF79;
+}
+
+.app_pass_modal_desc {
+    color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.app_pass_modal button {
+    margin-top: 30px;
+    border: none;
+    background-color: #00FF79;
+    width: 120px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-family: 'Montserrat';
 }
 
 @media (max-width: 600px) {
