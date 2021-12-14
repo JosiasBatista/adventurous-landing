@@ -3,10 +3,10 @@ import { Redirect } from 'react-router-dom';
 
 import './style.css';
 
-import Skateboarding from '../../public/Skateboarding.png'
-import Snowboarding from '../../public/Snowboarding.png'
-import Climbing from '../../public/Climbing.png'
-import Travelling from '../../public/Travelling.png';
+import Skateboarding from '../../public/Skateboarding.webp'
+import Snowboarding from '../../public/Snowboarding.webp'
+import Climbing from '../../public/Climbing.webp'
+import Travelling from '../../public/Travelling.webp';
 import Header from '../../components/Header';
 
 export default function Index() {

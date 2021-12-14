@@ -4,11 +4,11 @@ import Header from "../../components/Header";
 import './styles.css';
 import AdventurousIcon from '../../public/Adventurous.svg';
 import EntrancePass from '../../public/EntrancePass.svg';
-import LakeJump from '../../public/pexels-taryn-elliott-6701148.jpg';
-import MountainTop from '../../public/pexels-jéshoots-69743.jpg';
-import Surffing from '../../public/pexels-khairul-leon-695779.jpg';
-import CupFrase from '../../public/pexels-s-migaj-891252.jpg';
-import Cyclists from '../../public/pexels-pixabay-248547.jpg';
+import LakeJump from '../../public/lake.webp';
+import MountainTop from '../../public/mountain.webp';
+import Surffing from '../../public/surf.webp';
+import CupFrase from '../../public/sentence.webp';
+import Cyclists from '../../public/cycle.webp';
 
 export default function Download() {
     const [appPassModalStatus, setAppPassModalStatus] = useState(false);
@@ -18,14 +18,6 @@ export default function Download() {
             <Header />
 
             <div className="download-page_content">
-                {/* <img src={ClimberIcon} alt="escalador" title="escalador" />
-
-                <strong>
-                    Estamos quase finalizando a escalada!<br/>
-                    <strong className="text_description_spotlight">
-                        Em breve estará tudo pronto para você
-                    </strong>
-                </strong> */}
                 <div className="download-page_infos">
                     <div className="download-page_infos-texts">
                         <strong>Estamos finalizando a escalada dessa montanha.</strong>

@@ -32,6 +32,7 @@ h1 {
   height: auto;
   z-index: 200;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
 
 .strong-green-text {
@@ -51,20 +52,27 @@ h1 {
 
 .navigation-header {
   position: absolute;
-  right: 10px;
-  top: 0px;
+  right: 0px;
+  padding-right: 20px;
+  justify-content: flex-end;
+  top: -16px;
+  padding-bottom: 5px;
+  background-color: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 20px;
+  padding-inline-start: 15px;
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 200;
-  margin-block-start: 8px;
 }
 
 .navigation-header li {
   font-size: 20px;
   margin-left: 1vw;
   cursor: pointer;
+  border-left-width: 1;
+  border-left-color: #000000;
 }
 
 .navigation-header li a {
@@ -90,6 +98,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .navigation-header {
+    padding-right: 5px;
+    padding-inline-start: 5px;
+  }
+
   .navigation-header li {
     font-size: 12px !important;
     margin-left: 10px;

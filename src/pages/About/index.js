@@ -5,12 +5,12 @@ import Header from '../../components/Header'
 import { Redirect } from 'react-router-dom';
 
 import './style.css';
-import Friends from '../../public/pexels-rodolfo-quirós-1730757.jpg';
-import Community from '../../public/fei-chao-zUbSHj23Wws-unsplash.jpg';
-import Badge from '../../public/pexels-jack-redgate-3013979.jpg';
-import Challenge from '../../public/pexels-dave-meckler-3242025.jpg';
-import CliffJump from '../../public/pexels-dmitriy-ganin-7790598.jpg';
-import Steps from '../../public/pexels-ben-mack-5326900.jpg';
+import Friends from '../../public/interactions.webp';
+import Community from '../../public/community.webp';
+import Badge from '../../public/badge.webp';
+import Challenge from '../../public/challenge.webp';
+import CliffJump from '../../public/travel.webp';
+import Steps from '../../public/legacy.webp';
 
 export default function AboutPage() {
     const [redirectToDownload, setRedirectToDownload] = useState(false);
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
             <section className="app-existence-desc">
                 <p className="subtitle">Não importa o motivo... A vida é melhor quando{"\n"}
-                COMPARTILHAMOS e nós existimos para te ajudar a{"\n"}
+                COMPARTILHAMOS e nós existimos para te ajudar a
                 COMPARTILHAR e <span className="strong-green-text">VIVER</span> em comunidade!
                 </p>
 
@@ -70,32 +70,44 @@ export default function AboutPage() {
                         infiniteLoop={true}
                     >
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Encontre pessoas com os mesmos interesses!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Encontre pessoas com os mesmos interesses!</span>
+                            </div>
                             <img src={Friends} alt="Friends" title="Friends" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Faça parte de comunidades do que você ama!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Faça parte de comunidades do que você ama!</span>
+                            </div>
                             <img src={Community} alt="Community" title="Community" />
                         </div>
                         
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Ganhe insígnias que mostrem quem você é!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Ganhe insígnias que mostrem quem você é!</span>
+                            </div>
                             <img src={Badge} alt="Badge" title="Badge" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Encare desafios e se supere!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Encare desafios e se supere!</span>
+                            </div>
                             <img src={Challenge} alt="Challenge" title="Challenge" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Encontre a aventura da próxima viagem!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Encontre a aventura da próxima viagem!</span>
+                            </div>
                             <img className="cliff-jump-image" src={CliffJump} alt="CliffJump" title="CliffJump" />
                         </div>
 
                         <div className="app-existence-carousel-images">
-                            <span className="app-existence-carousel-label text">Escreva o seu legado!</span>
+                            <div className="app-existence-carousel-label-container">
+                                <span className="app-existence-carousel-label text">Escreva o seu legado!</span>
+                            </div>
                             <img className="steps-image" src={Steps} alt="Steps" title="Steps" />
                         </div>
                     </Carousel>
