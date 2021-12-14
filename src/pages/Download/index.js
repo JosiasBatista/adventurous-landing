@@ -4,11 +4,11 @@ import Header from "../../components/Header";
 import './styles.css';
 import AdventurousIcon from '../../public/Adventurous.svg';
 import EntrancePass from '../../public/EntrancePass.svg';
-import LakeJump from '../../public/pexels-taryn-elliott-6701148.jpg';
-import MountainTop from '../../public/pexels-jéshoots-69743.jpg';
-import Surffing from '../../public/pexels-khairul-leon-695779.jpg';
-import CupFrase from '../../public/pexels-s-migaj-891252.jpg';
-import Cyclists from '../../public/pexels-pixabay-248547.jpg';
+import LakeJump from '../../public/lake.webp';
+import MountainTop from '../../public/mountain.webp';
+import Surffing from '../../public/surf.webp';
+import CupFrase from '../../public/sentence.webp';
+import Cyclists from '../../public/cycle.webp';
 
 export default function Download() {
     const [appPassModalStatus, setAppPassModalStatus] = useState(false);
