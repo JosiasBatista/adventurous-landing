@@ -18,14 +18,6 @@ export default function Download() {
             <Header />
 
             <div className="download-page_content">
-                {/* <img src={ClimberIcon} alt="escalador" title="escalador" />
-
-                <strong>
-                    Estamos quase finalizando a escalada!<br/>
-                    <strong className="text_description_spotlight">
-                        Em breve estará tudo pronto para você
-                    </strong>
-                </strong> */}
                 <div className="download-page_infos">
                     <div className="download-page_infos-texts">
                         <strong>Estamos finalizando a escalada dessa montanha.</strong>

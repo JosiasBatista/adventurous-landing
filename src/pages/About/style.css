@@ -188,7 +188,7 @@
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.35;
 }
 
 .app-existence-carousel-images img.cliff-jump-image {
