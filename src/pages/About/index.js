@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { FaGooglePlay } from 'react-icons/fa';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from '../../components/Header'
-import { Redirect } from 'react-router-dom';
 
 import './style.css';
 import Friends from '../../public/interactions.webp';
@@ -14,10 +13,8 @@ import CliffJump from '../../public/travel.webp';
 import Steps from '../../public/legacy.webp';
 
 export default function AboutPage() {
-    const [redirectToDownload, setRedirectToDownload] = useState(false);
 
     function goToDownload() {
-        // setRedirectToDownload(true);
         window.location.replace("https://play.google.com/store/apps/details?id=com.going.goingapp")
     }
 
@@ -122,12 +119,6 @@ export default function AboutPage() {
                     <FaGooglePlay size={50} color="#00FF79" />
                 </button>
             </section>
-
-            {/* <button className="download-button" onClick={() => goToDownload()}>Em breve</button> */}
-
-            {redirectToDownload &&
-                <Redirect to="/download" />
-            }
         </div>
     )
 }

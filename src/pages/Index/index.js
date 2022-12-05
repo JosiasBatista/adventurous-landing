@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaGooglePlay } from 'react-icons/fa';
-import { Redirect } from 'react-router-dom';
 
 import './style.css';
 
@@ -11,10 +10,8 @@ import Travelling from '../../public/Travelling.webp';
 import Header from '../../components/Header';
 
 export default function Index() {
-    const [redirectToDownload, setRedirectToDownload] = useState(false);
 
     function goToDownload() {
-        // setRedirectToDownload(true);
         window.location.replace("https://play.google.com/store/apps/details?id=com.going.goingapp")
     }
 
@@ -52,9 +49,6 @@ export default function Index() {
                 <img className="travelling-image" src={Travelling} alt="travelling" title="travelling" />
             </section>
 
-            {redirectToDownload &&
-                <Redirect to="/download" />
-            }
         </div>
     )
 }
