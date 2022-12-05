@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { FaGooglePlay } from 'react-icons/fa';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from '../../components/Header'
 import { Redirect } from 'react-router-dom';
@@ -16,7 +17,8 @@ export default function AboutPage() {
     const [redirectToDownload, setRedirectToDownload] = useState(false);
 
     function goToDownload() {
-        setRedirectToDownload(true);
+        // setRedirectToDownload(true);
+        window.location.replace("https://play.google.com/store/apps/details?id=com.going.goingapp")
     }
 
     return (
@@ -114,7 +116,14 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <button className="download-button" onClick={() => goToDownload()}>Em breve</button>
+            <section className="download_call_container">
+                <span className="download_call">Baixe agora</span>
+                <button className="no-style-button" onClick={() => goToDownload()}>
+                    <FaGooglePlay size={50} color="#00FF79" />
+                </button>
+            </section>
+
+            {/* <button className="download-button" onClick={() => goToDownload()}>Em breve</button> */}
 
             {redirectToDownload &&
                 <Redirect to="/download" />

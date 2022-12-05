@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaGooglePlay } from 'react-icons/fa';
 import { Redirect } from 'react-router-dom';
 
 import './style.css';
@@ -13,7 +14,8 @@ export default function Index() {
     const [redirectToDownload, setRedirectToDownload] = useState(false);
 
     function goToDownload() {
-        setRedirectToDownload(true);
+        // setRedirectToDownload(true);
+        window.location.replace("https://play.google.com/store/apps/details?id=com.going.goingapp")
     }
 
     return (
@@ -43,7 +45,10 @@ export default function Index() {
             </section>
             <section className="index-page_redirection">
                 <strong>Por qual motivo sair em uma<br/>aventura sozinho quando<br/>você pode ser parte de um <strong className="strong-green-text">TIME</strong></strong>
-                <button className="adventurous-button" onClick={() => goToDownload()}>Em breve</button>
+                <span className="download_call">Baixe agora</span>
+                <button className="no-style-button" onClick={() => goToDownload()}>
+                    <FaGooglePlay size={50} color="#00FF79" />
+                </button>
                 <img className="travelling-image" src={Travelling} alt="travelling" title="travelling" />
             </section>
 

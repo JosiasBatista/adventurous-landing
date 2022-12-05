@@ -27,6 +27,16 @@
     display: inline-block;
 }
 
+.download-page_infos-texts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.download-page_infos-texts span {
+    margin-bottom: 16px;
+}
+
 .download-page_infos-texts strong {
     margin-bottom: 10px;
 }
@@ -44,8 +54,9 @@
 }
 
 .app-presentation img {
-    width: 20vw !important;
+    width: 19vw !important;
     height: 20vw !important;
+    object-fit: cover;
 }
 
 .download-page_image-montage {

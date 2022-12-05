@@ -97,6 +97,17 @@ h1 {
   transform: translateX(-50%);
 }
 
+.no-style-button {
+  border: none;
+  background: none;
+}
+
+.download_call {
+  margin-top: 5%;
+  font-size: 1vw;
+  color: #FFF;
+}
+
 @media (max-width: 600px) {
   .navigation-header {
     padding-right: 5px;

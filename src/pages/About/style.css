@@ -202,3 +202,16 @@
 .app-existence-desc-box button img {
     color: #00FF79;
 }
+
+.download_call_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px
+}
+
+.download_call_container span {
+    margin-bottom: 16px
+}
